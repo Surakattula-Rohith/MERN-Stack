@@ -11,6 +11,7 @@
         height: 100px;
         border-radius: 50px;
         margin: 10px;
+        display: inline-block;
       }
       #red {
         background-color: red;
@@ -21,22 +22,33 @@
       #blue {
         background-color: blue;
       }
+      #reset {
+        margin-top: 50px;
+        margin-right: 50px;
+        float: right;
+      }
     </style>
   </head>
   <body>
     <div class="circle" id="red"></div>
+
     <div class="circle" id="green"></div>
     <div class="circle" id="blue"></div>
-
+    <button id="reset">Reset</button>
     <script>
-      document.getElementsById("red").onclick = function () {
-        document.getElementsById("red").style.display = "none";
+      document.getElementById("red").onclick = function () {
+        document.getElementById("red").style.display = "none";
       };
-      document.getElementsById("blue").onclick = function () {
-        document.getElementsById("blue").style.display = "none";
+      document.getElementById("green").onclick = function () {
+        document.getElementById("green").style.display = "none";
       };
-      document.getElementsById("green").onclick = function () {
-        document.getElementsById("green").style.display = "none";
+      document.getElementById("blue").onclick = function () {
+        document.getElementById("blue").style.display = "none";
+      };
+      document.getElementById("reset").onclick = function () {
+        document.getElementById("red").style.display = "inline-block";
+        document.getElementById("green").style.display = "inline-block";
+        document.getElementById("blue").style.display = "inline-block";
       };
     </script>
   </body>
