@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Testing</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="/jquery.js"></script>
+    <style>
+      body {
+        margin: 10px;
+      }
+      .circle {
+        margin: 10px;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        background-color: greenyellow;
+      }
+      #square {
+        margin: 10px;
+        width: 200px;
+        height: 200px;
+        background-color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <script>
+        if(jQuery == "undefined"){
+            alert("jQuery not included!!");
+        }else{
+            alert("jQuery is included!!");
+
+        }
+    </script> -->
+    <!-- <div class="circle" id="circle1"></div>
+    <div id="square"></div>
+    <div class="circle" id="circle2"></div> -->
+    <p>This is some Random text.</p>
+    <button>Click Here!</button>
+    <script>
+    //   $("#circle1").click(function () {
+    //     alert("Clicked on Circle!");
+    //   });
+    //   $("#circle2").click(function () {
+    //     alert("Clicked on Circle!");
+    //   });
+    //   $("#square").hover(function () {
+    //     alert("Hovered on Square!");
+    //   });
+    // $("div").click(function () {
+    //     alert("Clicked on Shape!");
+    //   });
+    $("p").click(function(){
+        $("p").html("Text has changed!");
+    });
+    $("button").click(function(){
+        $("p").fadeOut("slow",function(){
+            alert("Button clicked, content Faded.");
+        });
+    });
+
+    </script>
+  </body>
+</html>
